@@ -11,7 +11,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
-        android:text="View 滑动的八种方式"
+        android:text="View 移动的九种方式"
         android:textAllCaps="false"
         android:textSize="18sp"
         android:textColor="@android:color/holo_orange_dark"/>
@@ -66,10 +66,17 @@
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/button_animation"
+        android:id="@+id/button_place_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="八，动画"
+        android:text="八，位移动画"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_property_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="九，属性动画"
         android:textAllCaps="false"/>
 
 

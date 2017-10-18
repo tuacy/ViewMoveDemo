@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_move_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="移动动作"/>
+
+    <TextView
+        android:id="@+id/view_move"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="位移动画移动View"
+        android:textSize="18sp"
+        android:background="@android:color/holo_orange_dark"/>
+
+
+</LinearLayout>

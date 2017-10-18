@@ -5,11 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.tuacy.viewmovedemo.animation.AnimationMoveActivity;
+import com.tuacy.viewmovedemo.placeanimation.PlaceAnimationMoveActivity;
 import com.tuacy.viewmovedemo.draghelper.DragHelperMoveActivity;
 import com.tuacy.viewmovedemo.layout.LayoutMoveActivity;
 import com.tuacy.viewmovedemo.offset.OffsetMoveActivity;
 import com.tuacy.viewmovedemo.params.ParamsMoveActivity;
+import com.tuacy.viewmovedemo.propertyanimation.PropertyAnimationMoveActivity;
 import com.tuacy.viewmovedemo.scroll.ScrollMoveActivity;
 import com.tuacy.viewmovedemo.scroller.ScrollerMoveActivity;
 import com.tuacy.viewmovedemo.translation.TranslationMoveActivity;
@@ -76,10 +77,16 @@ public class MainActivity extends AppCompatActivity {
 				DragHelperMoveActivity.startUp(mContext);
 			}
 		});
-		findViewById(R.id.button_animation).setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.button_place_animation).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				AnimationMoveActivity.startUp(mContext);
+				PlaceAnimationMoveActivity.startUp(mContext);
+			}
+		});
+		findViewById(R.id.button_property_animation).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				PropertyAnimationMoveActivity.startUp(mContext);
 			}
 		});
 	}

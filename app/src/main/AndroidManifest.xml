@@ -18,8 +18,8 @@
         </activity>
 
         <activity
-            android:name=".animation.AnimationMoveActivity"
-            android:label="动画移动View" />
+            android:name=".placeanimation.PlaceAnimationMoveActivity"
+            android:label="位移动画移动View" />
 
         <activity
             android:name=".draghelper.DragHelperMoveActivity"
@@ -48,6 +48,10 @@
         <activity
             android:name=".scroller.ScrollerMoveActivity"
             android:label="scroller移动View" />
+
+        <activity
+            android:name=".propertyanimation.PropertyAnimationMoveActivity"
+            android:label="属性动画移动View" />
     </application>
 
 </manifest>
