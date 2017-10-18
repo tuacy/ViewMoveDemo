@@ -5,24 +5,73 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.tuacy.viewmovedemo.widget.TestLayout
-        android:id="@+id/test_view"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="Hello World!"
-        android:background="@android:color/darker_gray">
-
-        <com.tuacy.viewmovedemo.widget.TestView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="aaaaa"/>
-
-        </com.tuacy.viewmovedemo.widget.TestLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="View 滑动的八种方式"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"/>
 
     <Button
-        android:id="@+id/click_view"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="click"/>
+        android:text="一，layout"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_offset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="二，offsetLeftAndRight，offsetTopAndBottom"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="三，setTranslationX，setTranslationY"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="四，scrollTo，scrollBy"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="五，Scroller"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_helper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="六，ViewDragHelper"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="七，LayoutParams"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="八，动画"
+        android:textAllCaps="false"/>
+
+
 
 </LinearLayout>

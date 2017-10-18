@@ -16,6 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".animation.AnimationMoveActivity"
+            android:label="动画移动View" />
+
+        <activity
+            android:name=".draghelper.DragHelperMoveActivity"
+            android:label="DragHelper移动View" />
+
+        <activity
+            android:name=".layout.LayoutMoveActivity"
+            android:label="layout移动View" />
+
+        <activity
+            android:name=".offset.OffsetMoveActivity"
+            android:label="offset移动View" />
+
+        <activity
+            android:name=".translation.TranslationMoveActivity"
+            android:label="translation移动View" />
+
+        <activity
+            android:name=".params.ParamsMoveActivity"
+            android:label="LayoutParams移动View" />
+
+        <activity
+            android:name=".scroll.ScrollMoveActivity"
+            android:label="scrollTo scrollBy移动View" />
+
+        <activity
+            android:name=".scroller.ScrollerMoveActivity"
+            android:label="scroller移动View" />
     </application>
 
 </manifest>

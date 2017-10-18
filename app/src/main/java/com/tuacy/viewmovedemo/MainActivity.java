@@ -1,44 +1,85 @@
 package com.tuacy.viewmovedemo;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
-import com.tuacy.viewmovedemo.widget.TestLayout;
-import com.tuacy.viewmovedemo.widget.TestView;
+import com.tuacy.viewmovedemo.animation.AnimationMoveActivity;
+import com.tuacy.viewmovedemo.draghelper.DragHelperMoveActivity;
+import com.tuacy.viewmovedemo.layout.LayoutMoveActivity;
+import com.tuacy.viewmovedemo.offset.OffsetMoveActivity;
+import com.tuacy.viewmovedemo.params.ParamsMoveActivity;
+import com.tuacy.viewmovedemo.scroll.ScrollMoveActivity;
+import com.tuacy.viewmovedemo.scroller.ScrollerMoveActivity;
+import com.tuacy.viewmovedemo.translation.TranslationMoveActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
-	private TestLayout mTestView;
-	private Button     mButton;
+	private Context mContext;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		mContext = this;
 		initView();
 		initEvent();
 		initData();
 	}
 
 	private void initView() {
-		mTestView = (TestLayout) findViewById(R.id.test_view);
-		mButton = (Button) findViewById(R.id.click_view);
+
 	}
 
 	private void initEvent() {
-		mTestView.setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.button_layout).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Log.d("tuacy", "text view on click");
+				LayoutMoveActivity.startUp(mContext);
 			}
 		});
-		mButton.setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.button_offset).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				mTestView.setX(mTestView.getX() + 10);
+				OffsetMoveActivity.startUp(mContext);
+			}
+		});
+		findViewById(R.id.button_translation).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				TranslationMoveActivity.startUp(mContext);
+			}
+		});
+		findViewById(R.id.button_params).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ParamsMoveActivity.startUp(mContext);
+			}
+		});
+		findViewById(R.id.button_scroll).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ScrollMoveActivity.startUp(mContext);
+			}
+		});
+		findViewById(R.id.button_scroller).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ScrollerMoveActivity.startUp(mContext);
+			}
+		});
+		findViewById(R.id.button_helper).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				DragHelperMoveActivity.startUp(mContext);
+			}
+		});
+		findViewById(R.id.button_animation).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				AnimationMoveActivity.startUp(mContext);
 			}
 		});
 	}
